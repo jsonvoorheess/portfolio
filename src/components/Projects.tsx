@@ -2,6 +2,7 @@ import styles from './Portfolio.module.css';
 import { ProjectCard } from './ProjectCard';
 import movieAppImage from '../assets/movieApp.png';
 import artAppImage from '../assets/artApp.png';
+import shopAppImage from '../assets/shopapp.png';
 
 export default function Projects() {
   return (
@@ -41,7 +42,7 @@ export default function Projects() {
         githubUrl="https://github.com/evrenshah/blog-website-template"
         title="Blog Website Template"
         description="I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book."
-        imageSrc="https://cdn.builder.io/api/v1/image/assets/dd15ee627bdf46a9b691a6ea1dddc9a1/73a0742bd4cedd6ed245614ae5c3f037b8f0646dd23a6aaafd8a02519a5edd22?placeholderIfAbsent=true"
+        imageSrc={shopAppImage}
         imagePosition="left"
         websiteUrl="https://movieappads.netlify.app/"
       />
