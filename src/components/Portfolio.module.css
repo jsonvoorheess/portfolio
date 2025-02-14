@@ -42,7 +42,7 @@
   display: flex;
   margin-top: -11px;
   width: 100%;
-  padding: 144px 80px 269px;
+  padding: 144px 80px 129px;
   align-items: center;
   
 }
@@ -337,7 +337,7 @@
 }
 
 .contactSection {
-  margin-top: 234px;
+  margin-top: 34px;
 }
 
 .contact {
@@ -348,13 +348,25 @@
   letter-spacing: 0.5px;
 }
 
+.telegramDiv {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.telegramIcon {
+  max-width: 49px;
+  cursor: pointer;
+}
+
 .contactText {
   color: rgba(255, 255, 255, 1);
   font-size: 15px;
   font-family: Preahvihear, -apple-system, Roboto, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0.3px;
-  margin-top: 73px;
+  margin-top: 33px;
 }
 
 .highlight {
