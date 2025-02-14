@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
           <br />
           I make meaningful and delightful digital products that create an
           equilibrium
-          <br />
+          {/* <br /> */}
           between user needs and business goals.
         </div>
         

@@ -5,7 +5,7 @@ import VkIcon from "../assets/vkIcon.svg?react";
 
 export const Contact: React.FC = () => {
   return (
-    <div className={styles.contactSection}>
+    <div className={styles.contactSection} id="contacts">
       <div className={styles.contact}>Contacts</div>
       <div className={styles.contactText}>
         I'm currently looking to join a cross-functional team that values

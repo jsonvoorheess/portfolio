@@ -44,7 +44,7 @@
   width: 100%;
   padding: 144px 80px 129px;
   align-items: center;
-  
+  justify-content: center;
 }
 
 .content {
@@ -58,6 +58,7 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
 
 .greeting {
   color: rgba(255, 255, 255, 1);
@@ -160,7 +161,7 @@
   letter-spacing: 0.44px;
   margin-top: 30px;
   margin-left: 14px;
-  width: 892px;
+  /* width: 892px; */
 }
 
 .workExperience {
@@ -393,12 +394,9 @@
     padding: 100px 20px;
   }
 
-  .content {
-    margin-bottom: 10px;
-  }
-
   .greeting {
     margin-left: 10px;
+    margin: 0 auto
   }
 
   .heroContent {
@@ -408,7 +406,6 @@
 
   .imageColumn,
   .textColumn {
-    width: 100%;
     margin-left: 0;
   }
 
@@ -440,6 +437,7 @@
   }
 
   .bio {
+    font-size: 16px;
     max-width: 100%;
     margin-top: 40px;
   }
@@ -531,6 +529,10 @@
     max-width: 100%;
     margin-top: 40px;
   }
+
+  .content {
+    align-items: center;
+  }
 }
 
 .skills {
@@ -545,26 +547,20 @@
   justify-content: center;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .skills {
     padding: 60px 20px;
     white-space: initial;
   }
-}
+} */
 
 .container {
   width: 100%;
   max-width: 1280px;
   overflow: hidden;
+  padding: 0 32px;
 }
 
-@media (max-width: 991px) {
-  .container {
-    max-width: 100%;
-    padding: 0 20px;
-    white-space: initial;
-  }
-}
 
 .titleRow {
   display: flex;
@@ -581,13 +577,13 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .titleRow {
     max-width: 100%;
     font-size: 40px;
     white-space: initial;
   }
-}
+} */
 
 .titleLight {
   font-weight: 400;
@@ -597,11 +593,11 @@
   color: #fff;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .titleLight {
     font-size: 40px;
   }
-}
+} */
 
 .titleBold {
   font-weight: 800;
@@ -616,25 +612,32 @@
   transition: background-color 0.5s ease;
   color: #fff;
 }
-
+/* 
 @media (max-width: 991px) {
   .titleBold {
     font-size: 40px;
   }
-}
+} */
 
 .skillsGrid {
- display: grid;
+ /* display: grid;
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
- gap: 10px;
-}
+ gap: 10px; */
 
-@media (max-width: 991px) {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+ gap: 1rem;
+ width: 100%;
+}
+ 
+ @media (max-width: 991px) {
   .skillsGrid {
-    max-width: 100%;
-    white-space: initial;
+    gap: 0.8rem;
+    grid-template-columns: repeat(3, 150px); 
   }
 }
+
+/* здесь */
 
 
 @media (max-width: 991px) {
@@ -642,7 +645,7 @@
     max-width: 100%;
     white-space: initial;
   }
-}
+}  
 
 .skillCard {
   justify-content: center;
@@ -653,19 +656,18 @@
   align-self: stretch;
   display: flex;
   margin: auto 0;
-  min-height: 186px;
-  padding: 0 24px;
+  padding: 0 16px;
   border-radius: 20px;
   flex-direction: column;
-  width: 186px;
-  height: 186px;
+  width: 100%;
+  aspect-ratio: 1;
   font-family: Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 @media (max-width: 991px) {
   .skillCard {
-    padding: 0 20px;
-    white-space: initial;
+    padding: 0 15px;
+    padding: 8px;
   }
 }
 
@@ -678,6 +680,7 @@
 }
 
 .skillName {
+  font-size: 14px;
   margin-top: 32px;
 }
 
@@ -690,6 +693,32 @@
 @media (max-width: 991px) {
   .container {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 692px) {
+  .skillsGrid {
+    grid-template-columns: repeat(3, 150px);
+    /* grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); */
+    gap: 0.6rem;
+    justify-content: center;
+  }
+
+  .role {
+    font-size: 30px;
+  }
+
+  .bio {
+    font-size: 14px;
+  }
+
+  .skillIcon {
+    width: 40px;
+  }
+
+  .skillName {
+    margin-top: 16px;
+    font-size: 12px;
   }
 }
 
@@ -721,6 +750,14 @@
     max-width: 100%;
     font-size: 40px;
     white-space: initial;
+  }
+
+  .skillName {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .skillIcon {
+    width: 40px;
   }
 }
 
