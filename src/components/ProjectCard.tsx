@@ -17,7 +17,14 @@ interface ProjectCardProps {
 
 
 
+
 export function ProjectCard({ number, title, description, imageSrc, imagePosition, websiteUrl, githubUrl, isDemo }: ProjectCardProps) {
+  
+  const websiteTeleport = () => {
+    window.open(websiteUrl, '_blank');
+  }
+  
+  
   const ImageSection = (
       <div className={styles.image}>
         <img src={imageSrc[0]} alt={title} className={styles.img} />
@@ -35,10 +42,17 @@ export function ProjectCard({ number, title, description, imageSrc, imagePositio
           {description}
         </p>
         <div className={styles.div2}>
-        {isDemo && <a target="_blank" rel="noopener noreferrer" href={websiteUrl} aria-label="Read More" className={styles.readMore}>
+        {isDemo && <button 
+        // target="_blank" 
+        // rel="noopener noreferrer"
+        //  href={websiteUrl} 
+        // aria-label="Read More"
+        onClick={websiteTeleport}
+         className={styles.readMore}
+         >
           <ReadMoreIcon />
          
-        </a>}
+        </button>}
         <a target="_blank" rel="noopener noreferrer" href={githubUrl} aria-label="Read More" className={styles.readMore}>
           <GithubIcon />
          

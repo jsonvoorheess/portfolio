@@ -984,13 +984,19 @@
 .readMore,
 .readMore2 {
   display: flex;
-  min-height: 30px;
+  min-height: 35px;
   margin-top: 28px;
-  width: 30px;
-  background: none;
+  width: 35px;
+  background:rgb(98, 38, 150);
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.readMore:hover {
+  transition: background 0.3s ease;
+  background:rgb(154, 47, 241);
 }
 
 .readMore2 {
