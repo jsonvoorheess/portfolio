@@ -164,7 +164,6 @@
   letter-spacing: 0.44px;
   margin-top: 30px;
   margin-left: 14px;
-  /* width: 892px; */
 }
 
 .workExperience {
@@ -411,7 +410,6 @@
 
   .imageColumn,
   .textColumn {
-    /* margin-left: 0; */
     margin: 0 auto;
   }
 
@@ -547,7 +545,6 @@
 
 .skills {
   display: flex;
-  /* padding: 60px 80px; */
   flex-direction: column;
   overflow: hidden;
   align-items: center;
@@ -557,12 +554,6 @@
   justify-content: center;
 }
 
-/* @media (max-width: 991px) {
-  .skills {
-    padding: 60px 20px;
-    white-space: initial;
-  }
-} */
 
 .container {
   width: 100%;
@@ -586,14 +577,6 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
-/* @media (max-width: 991px) {
-  .titleRow {
-    max-width: 100%;
-    font-size: 40px;
-    white-space: initial;
-  }
-} */
 
 .titleLight {
   font-weight: 400;
@@ -626,18 +609,8 @@
   transition: background-color 0.5s ease;
   color: #fff;
 }
-/* 
-@media (max-width: 991px) {
-  .titleBold {
-    font-size: 40px;
-  }
-} */
 
 .skillsGrid {
- /* display: grid;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
- gap: 10px; */
-
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
  gap: 1rem;
@@ -650,8 +623,6 @@
     grid-template-columns: repeat(3, 150px); 
   }
 }
-
-/* здесь */
 
 
 @media (max-width: 991px) {
@@ -713,13 +684,12 @@
 @media (max-width: 692px) {
   .skillsGrid {
     grid-template-columns: repeat(3, 100px);
-    /* grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); */
     gap: 0.6rem;
     justify-content: center;
   }
 
   .role {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .bio {
@@ -825,9 +795,6 @@
   padding: 20px 0;
   align-items: center;
   gap: 40px;
-  /* overflow: hidden; */
-  /* justify-content: flex-start; */
-  /* flex-wrap: wrap; */
   min-height: 400px;
 }
 
