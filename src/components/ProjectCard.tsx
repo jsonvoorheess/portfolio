@@ -2,27 +2,26 @@ import styles from './Portfolio.module.css';
 import ReadMoreIcon from '../assets/ReadMore.svg?react';
 import GithubIcon from "../assets/github_seeklogo.svg?react"
 
+
 interface ProjectCardProps {
   number: string;
   title: string;
   description: string;
-  imageSrc: string;
+  imageSrc: string[];
   imagePosition: 'left' | 'right';
   websiteUrl: string;
   githubUrl: string;
   isDemo: boolean;
 }
 
+
+
+
 export function ProjectCard({ number, title, description, imageSrc, imagePosition, websiteUrl, githubUrl, isDemo }: ProjectCardProps) {
   const ImageSection = (
-    <div className={imagePosition === 'right' ? styles.image2 : styles.image}>
-      <img
-        loading="lazy"
-        src={imageSrc}
-        alt={title}
-        className={styles.img}
-      />
-    </div>
+      <div className={styles.image}>
+        <img src={imageSrc[0]} alt={title} className={styles.img} />
+      </div>
   );
 
   const ContentSection = (

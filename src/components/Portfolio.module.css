@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Preahvihear&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
 .portfolio {
   background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
@@ -98,6 +100,7 @@
 .textColumn {
   width: 60%;
   margin-left: 20px;
+  padding: 0 40px;
 }
 
 .tagline {
@@ -128,7 +131,7 @@
   display: flex;
   margin-top: 96px;
   width: 100%;
-  padding: 0 5px;
+  padding: 0 30px;
   flex-direction: column;
   align-items: start;
 }
@@ -339,6 +342,7 @@
 
 .contactSection {
   margin-top: 34px;
+  padding: 0 30px;
 }
 
 .contact {
@@ -794,14 +798,16 @@
   padding: 20px 0;
   align-items: center;
   gap: 40px;
-  overflow: hidden;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  /* overflow: hidden; */
+  /* justify-content: flex-start; */
+  /* flex-wrap: wrap; */
+  min-height: 400px;
 }
 
 @media (max-width: 991px) {
   .project1 {
     max-width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -815,6 +821,7 @@
   align-items: center;
   overflow: hidden;
   width: 594px;
+  margin: 0 auto;
 }
 
 .image {
@@ -831,7 +838,7 @@
     max-width: 100%;
   }
 }
-
+ 
 .img {
   aspect-ratio: 1.33;
   object-fit: contain;
@@ -842,7 +849,7 @@
   align-self: stretch;
   min-width: 240px;
   margin: auto 0;
-}
+} 
 
 .details {
   align-self: stretch;
@@ -850,6 +857,7 @@
   min-width: 240px;
   margin: auto 0;
   flex-direction: column;
+  padding: 0 30px;
   overflow: hidden;
   align-items: stretch;
   font-family:
@@ -928,8 +936,9 @@
   }
 }
 
+
 .imEvrenShahLoremIpsumIsSimplyDummyTextOfThePrintingAndTypesettingIndustryLoremIpsumHasBeenTheIndustrysStandardDummyTextEverSinceThe1500SWhenAnUnknownPrinterTookAGalleyOfTypeAndScrambledItToSpecimenBook {
-  color: #71717a;
+  color: white;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -968,3 +977,14 @@
     opacity: 0;
   }
 }
+
+
+
+.image,
+.image2 {
+  width: 45%;
+  min-height: 300px;
+  position: relative;
+} 
+
+ 
