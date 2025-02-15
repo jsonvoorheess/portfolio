@@ -391,6 +391,7 @@
 
   .navigation {
     white-space: initial;
+    font-size: 12px;
   }
 
   .background {
@@ -400,7 +401,7 @@
 
   .greeting {
     margin-left: 10px;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   .heroContent {
@@ -410,7 +411,8 @@
 
   .imageColumn,
   .textColumn {
-    margin-left: 0;
+    /* margin-left: 0; */
+    margin: 0 auto;
   }
 
   .profileImage {
@@ -429,6 +431,8 @@
   .introduction {
     max-width: 100%;
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
   }
 
   .role {
@@ -444,6 +448,7 @@
     font-size: 16px;
     max-width: 100%;
     margin-top: 40px;
+    padding-left: 50px;
   }
 
   .workExperience {
@@ -527,6 +532,7 @@
 
   .contactSection {
     margin-top: 40px;
+    padding: 0 120px;
   }
 
   .contactText {
@@ -597,11 +603,15 @@
   color: #fff;
 }
 
-/* @media (max-width: 991px) {
-  .titleLight {
-    font-size: 40px;
+@media (max-width: 451px) {
+  .contactSection {
+    padding: 0 140px;
   }
-} */
+
+  .div {
+    padding: 0 60px;
+  }
+}
 
 .titleBold {
   font-weight: 800;
@@ -684,7 +694,7 @@
 }
 
 .skillName {
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 32px;
 }
 
@@ -702,18 +712,19 @@
 
 @media (max-width: 692px) {
   .skillsGrid {
-    grid-template-columns: repeat(3, 150px);
+    grid-template-columns: repeat(3, 100px);
     /* grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); */
     gap: 0.6rem;
     justify-content: center;
   }
 
   .role {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .bio {
-    font-size: 14px;
+    padding-left: 120px;
+    padding-right: 100px;
   }
 
   .skillIcon {
@@ -722,8 +733,19 @@
 
   .skillName {
     margin-top: 16px;
-    font-size: 12px;
+    font-size: 12px;  
   }
+
+  .taglineText {
+    font-size: 30px;
+  }
+
+  .greeting {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 }
 
 .heading {
@@ -756,9 +778,14 @@
     white-space: initial;
   }
 
+  .greeting {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .skillName {
     margin-top: 16px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .skillIcon {
     width: 40px;
@@ -876,6 +903,8 @@
 @media (max-width: 991px) {
   .details {
     max-width: 100%;
+    padding: 0 100px;
+    gap: 0;
   }
 }
 

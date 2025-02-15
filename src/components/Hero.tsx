@@ -1,16 +1,32 @@
 import React from "react";
 import styles from "./Portfolio.module.css";
 import Vector from "../assets/Vector.svg?react";
+import useWindowSize from "../useWindowSize";
+import Abc from "../assets/abc.svg?react";
 
 export const Hero: React.FC = () => {
+  const { width } = useWindowSize()
+
+
   return (
     <>
       <div className={styles.greeting}  id="about" >
-      <Vector />
-        <div>
+        {
+        width > 991 ? (
+          <>
+           <Vector />
+          <div className={styles.greetingText}>
+          Hello! I Am <span className={styles.highlight}>Zarifullin Danil</span>
+          </div>
+          </>
+         
+        ) : <>
+          
+        <div className={styles.greetingText}>
         Hello! I Am <span className={styles.highlight}>Zarifullin Danil</span>
         </div>
-       
+        <Abc />
+       </>}
        
       </div>
       

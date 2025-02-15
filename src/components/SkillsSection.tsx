@@ -16,7 +16,6 @@ import reduxIcon from '../assets/ReduxIcon.svg';
 import typescriptIcon from '../assets/typescriptIcon.svg';
 import webpackIcon from '../assets/webpackIcon.svg';
 import antIcon from '../assets/antIcon.svg';
-import bashIcon from '../assets/BashIcon.svg';
 import babelIcon from '../assets/BabelIcon.svg';
 import figmaIcon from '../assets/FigmaIcon.svg';
 import { useEffect, useState } from "react";
@@ -116,11 +115,6 @@ const SKILLS_ROW_1: Skill[] = [
     name: "Ant Design",
     iconUrl:
     antIcon,
-  },
-  {
-    name: "Bash",
-    iconUrl:
-    bashIcon,
   },
     {
       name: "Cursor.io",
