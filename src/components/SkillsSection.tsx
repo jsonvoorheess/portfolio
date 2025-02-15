@@ -11,7 +11,7 @@ import githubIcon from '../assets/githubIcon.svg';
 import jestIcon from '../assets/jestIcon.svg';
 import jsonIcon from '../assets/JsonIcon.svg';
 import npmIcon from '../assets/npmIcon.svg';
-import reactIcon from '../assets/reactIcon.svg';
+import reactIcon from '../assets/ReactIcon.svg';
 import reduxIcon from '../assets/ReduxIcon.svg';
 import typescriptIcon from '../assets/typescriptIcon.svg';
 import webpackIcon from '../assets/webpackIcon.svg';
