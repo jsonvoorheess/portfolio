@@ -1,12 +1,49 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Portfolio.module.css";
 import Vector from "../assets/Vector.svg?react";
 import useWindowSize from "../useWindowSize";
 import Abc from "../assets/abc.svg?react";
 
 export const Hero: React.FC = () => {
-  const { width } = useWindowSize()
+  const { width } = useWindowSize();
+  const [text, setText] = useState('');
+  const [isVisible, setIsVisible] = useState(false);
+  const fullText = "I'm a Frontend Developer.";
+  const roleRef = useRef(null);
 
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (roleRef.current) {
+      observer.observe(roleRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    let currentIndex = 0;
+    const intervalId = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setText(fullText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 100);
+
+    return () => clearInterval(intervalId);
+  }, [isVisible]);
 
   return (
     <>
@@ -53,7 +90,7 @@ export const Hero: React.FC = () => {
         </div>
       </div>
       <div className={styles.introduction}>
-        <div className={styles.role}>I'm a Frontend Developer. <span className={styles.blink} >|</span></div>
+        <div className={styles.role} ref={roleRef}>{text} <span className={styles.blink} >|</span></div>
         <div className={styles.bio}>
           A self-taught <span className={styles.highlight}>Frontend Developer</span>
           <br />
