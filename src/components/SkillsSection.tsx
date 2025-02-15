@@ -4,7 +4,7 @@ import nextIcon from '../assets/nextIcon.svg';
 import htmlIcon from '../assets/htmlIcon.svg';
 import sassIcon from '../assets/sassIcon.svg';
 import gitIcon from '../assets/gitIcon.svg';
-import jsIcon from '../assets/jsIcon.svg';
+import jsIcon from '../assets/JsIcon.svg';
 import cssIcon from '../assets/cssIcon.svg';
 import eslintIcon from '../assets/eslintIcon.svg';
 import githubIcon from '../assets/githubIcon.svg';
