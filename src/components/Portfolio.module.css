@@ -44,7 +44,7 @@
   display: flex;
   margin-top: -11px;
   width: 100%;
-  padding: 144px 80px 129px;
+  padding: 144px 80px 40px;
   align-items: center;
   justify-content: center;
 }
@@ -60,6 +60,7 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
 
 
 .greeting {
@@ -138,7 +139,7 @@
 
 .role {
   color: rgba(255, 255, 255, 1);
-  font-size: 50px;
+  font-size: 30px;
   font-family: Preahvihear, -apple-system, Roboto, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
@@ -342,6 +343,8 @@
 .contactSection {
   margin-top: 34px;
   padding: 0 30px;
+  padding-top: 50px;
+  border-top: 1px solid rgb(222, 187, 250);
 }
 
 .contact {
@@ -350,6 +353,7 @@
   font-family: Preahvihear, -apple-system, Roboto, Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
+  margin-top: 20px;
 }
 
 .telegramDiv {
@@ -395,7 +399,7 @@
 
   .background {
     max-width: 100%;
-    padding: 100px 20px;
+    padding: 20px 20px;
   }
 
   .greeting {
@@ -989,5 +993,27 @@
   from, to { opacity: 1; }
   50% { opacity: 0; }
 }
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1323px) {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 
  

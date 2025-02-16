@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Portfolio.module.css";
 import TeleIcon from "../assets/teleIcon.svg?react";
 import VkIcon from "../assets/vkIcon.svg?react";
+import GmailIcon from "../assets/gmailIcon.svg?react";
 
 export const Contact: React.FC = () => {
   return (
@@ -29,8 +30,14 @@ export const Contact: React.FC = () => {
           >
             <VkIcon />
           </a>
+          <a
+            className={styles.telegramIcon}
+            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=jrjtWvPDrVgLPKchzRXgnSMJnmzhLMdSJPxtxdlsJprqkklgbRRcBxnLWsCmBmzlKdNntHhW"
+            target="_blank"
+          >
+            <GmailIcon />
+          </a>
         </div>
-        zarifullin1688@gmail.com
       </div>
     </div>
   );

@@ -47,7 +47,9 @@ export const Hero: React.FC = () => {
 
   return (
     <>
-      <div className={styles.greeting}  id="about" >
+    <div className={styles.heroContainer}>
+      <div>
+    <div className={styles.greeting}  id="about" >
         {
         width > 991 ? (
           <>
@@ -89,6 +91,7 @@ export const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+      </div>
       <div className={styles.introduction}>
         <div className={styles.role} ref={roleRef}>{text} <span className={styles.blink} >|</span></div>
         <div className={styles.bio}>
@@ -101,6 +104,9 @@ export const Hero: React.FC = () => {
         </div>
         
       </div>
+    </div>
+      
+      
     </>
   );
 };
