@@ -32,8 +32,7 @@ export const Contact: React.FC = () => {
           </a>
           <a
             className={styles.telegramIcon}
-            href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=jrjtWvPDrVgLPKchzRXgnSMJnmzhLMdSJPxtxdlsJprqkklgbRRcBxnLWsCmBmzlKdNntHhW"
-            target="_blank"
+            href="mailto:zarifullin1688@gmail.com"
           >
             <GmailIcon />
           </a>
