@@ -43,10 +43,6 @@ export function ProjectCard({ number, title, description, imageSrc, imagePositio
         </p>
         <div className={styles.div2}>
         {isDemo && <button 
-        // target="_blank" 
-        // rel="noopener noreferrer"
-        //  href={websiteUrl} 
-        // aria-label="Read More"
         onClick={websiteTeleport}
          className={styles.readMore}
          >

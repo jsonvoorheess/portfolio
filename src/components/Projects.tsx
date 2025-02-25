@@ -1,7 +1,7 @@
 import styles from './Portfolio.module.css';
 import { ProjectCard } from './ProjectCard';
-import movieAppImage from '../assets/movieApp.png';
-import artAppImage from '../assets/artAPp.png';
+import movieAppImage from '../assets/firstProject.png';
+import artAppImage from '../assets/secondProject.png';
 import shopAppImage from '../assets/shopapp.png';
 
 export default function Projects() {
