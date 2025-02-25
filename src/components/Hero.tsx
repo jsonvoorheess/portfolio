@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
       <div className={styles.introduction}>
         <div className={styles.role} ref={roleRef}>{text} <span className={styles.blink} >|</span></div>
         <div className={styles.bio}>
-          A self-taught <span className={styles.highlight}>Frontend Developer</span>
+          A self-taught <span className={styles.highlight}>specialist</span> based in Saint-Petersburg
           <br />
           I make meaningful and delightful digital products that create an
           equilibrium
