@@ -1,6 +1,7 @@
 import styles from './Portfolio.module.css';
 import ReadMoreIcon from '../assets/ReadMore.svg?react';
 import GithubIcon from "../assets/github_seeklogo.svg?react"
+import useWindowSize from '../useWindowSize';
 
 
 interface ProjectCardProps {
@@ -19,7 +20,7 @@ interface ProjectCardProps {
 
 
 export function ProjectCard({ number, title, description, imageSrc, imagePosition, websiteUrl, githubUrl, isDemo }: ProjectCardProps) {
-  
+  const { width } = useWindowSize();
   const websiteTeleport = () => {
     window.open(websiteUrl, '_blank');
   }
@@ -64,7 +65,7 @@ export function ProjectCard({ number, title, description, imageSrc, imagePositio
 
   return (
     <section className={styles.project1}>
-      {imagePosition === 'left' ? (
+      {imagePosition === 'left' || width < 991 ? (
         <>
           {ImageSection}
           {ContentSection}
