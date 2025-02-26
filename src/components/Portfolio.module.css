@@ -637,6 +637,8 @@
   }
 }
 
+
+
 .titleBold {
   font-weight: 800;
   align-self: stretch;
@@ -1052,5 +1054,22 @@
   }
 }
 
+
+@media (max-width: 400px) {
+  .contactText {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 300px;
+  }
+
+  .role {
+    font-size: 18px;
+  }
+
+  .bio {
+    padding: 0 120px;
+  }
+}
 
  
