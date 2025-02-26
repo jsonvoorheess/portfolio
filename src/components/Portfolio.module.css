@@ -389,19 +389,19 @@
   padding-left: 4px;
   padding-right: 4px;
   border: 2px solid rgb(61, 10, 112);
-  border-radius: 10px;
-  transition: background 0.2s linear;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .telegramIcon svg {
   max-height: 29px;
-  padding-left: 2px;
-  padding-top: 1px;
-  padding-right: 1px;
+  padding-top: 4px;
 }
 
 .telegramIcon:hover {
   background-color: rgba(105, 59, 147, 1);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(105, 59, 147, 0.8); 
   
 }
 
