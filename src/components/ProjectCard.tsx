@@ -54,7 +54,6 @@ export function ProjectCard({ number, title, description, imageSrc, imagePositio
         <a target="_blank" rel="noopener noreferrer" href={githubUrl} aria-label="Read More" className={styles.readMore}>
           <GithubIcon />
         </a>
-        <a className={styles.linkProject} target='_blank'  href={githubUrl} >{title}</a>
         </div>
         
         </div>

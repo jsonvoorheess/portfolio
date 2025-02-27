@@ -32,7 +32,7 @@ export const Contact: React.FC = () => {
           </a>
           <a
             className={styles.telegramIcon}
-            href="mailto:zarifullin1688@gmail.com"
+            href="mailto:jsonvorhess@mail.ru"
           >
             <GmailIcon />
           </a>

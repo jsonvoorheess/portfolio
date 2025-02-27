@@ -79,6 +79,10 @@ const SKILLS_ROW_1: Skill[] = [
     iconUrl:
       jestIcon,
   },
+  {
+    name: "Builder.io",
+    iconUrl:"https://files.svgcdn.io/logos/builder-io-icon.svg"
+  },
 
   {
     name: "JSON",
@@ -119,10 +123,6 @@ const SKILLS_ROW_1: Skill[] = [
     {
       name: "Cursor.io",
       iconUrl:"https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/cursor.png"
-    },
-    {
-      name: "Builder.io",
-      iconUrl:"https://files.svgcdn.io/logos/builder-io-icon.svg"
     },
     {
       name: "Babel",
